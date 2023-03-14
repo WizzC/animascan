@@ -13,7 +13,7 @@ $scanController=new ScanController;
 
 try{
     if(empty($_GET["page"])){
-        require __DIR__."\views/accueil.view.php";
+        $animeController->afficherAccueil();
     }
     else{
         $url=explode("/",filter_var($_GET["page"],FILTER_SANITIZE_URL));
