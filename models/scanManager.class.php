@@ -47,7 +47,7 @@ class ScanManager extends Model{
         $stmt->bindValue(":tomes",$tomes,PDO::PARAM_STR);
         $stmt->bindValue(":episodes",$episodes,PDO::PARAM_STR);
         $stmt->bindValue(":idAnime",$idAnime,PDO::PARAM_STR);
-        $resultat = $stmt->execute();
+        $stmt->execute();
         $stmt->closeCursor();
     }
     public function suppressionScanBd($id){

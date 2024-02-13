@@ -53,7 +53,7 @@ try{
                 }else if($url[1]==="a"){
                     $animeController->ajoutAnime();
                 }else if($url[1]==="m"){
-                    $animeController->modificationAnime((int)$url[2]);
+                    
                 }else if($url[1]==="s"){
                     $animeController->suppressionAnime((int)$url[2]);
                 }else if($url[1]==="av"){

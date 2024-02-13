@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__."\..\models/animeManager.class.php";
+require_once "./models/anime/animeManager.class.php";
 
 class AnimeController {
     private $animeManager;
@@ -41,10 +41,6 @@ class AnimeController {
         // ajouter le Anime en bdd
         $this->animeManager->ajoutAnimeBd($_POST["nom"],$_POST["dateAnime"],$_POST["auteur"],$_POST["descriptionAnime"],$nomImageAjoute);
 
-        $_SESSION['alert']= [
-            "type"=> "success",
-            "msg"=> "Ajout Réalisé"
-        ];
         // redirige lutilisateur vers la pages des animes
         header("Location: ".URL."listeAnime");
     }

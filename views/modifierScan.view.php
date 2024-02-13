@@ -20,8 +20,8 @@ ob_start()
         <input type="text" class="form-control" id="tomes" name="tomes" value="<?= $scan->getTomes()?>">
     </div>
     <div class="form-group">
-        <label for="episodes">episodes :</label>
-        <input type="text" class="form-control" id="episodes" name="episodes" value="<?= $scan->getEpisodes()?>">
+        <label for="image" class="form-label">Changer l'image :</label>
+        <input class="form-control-file" type="file" id="imageAnime" name="imageAnime">
     </div>
     <div class="form-group">
         <label for="idAnime">idAnime :</label>
@@ -29,7 +29,7 @@ ob_start()
     </div>
     
     
-    <input type="hidden" name="identifiant" value="<?=$scan->getIdScan();?>">
+    <input type="hidden" name="identifiantScan" value="<?=$scan->getIdScan();?>">
     <button type="submit" class="btn btn-primary">Valider</button>
 </form>
 

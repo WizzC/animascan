@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__."\..\models/model.class.php";
-require_once __DIR__."\..\models/anime.class.php";
+require_once "./models/model.class.php";
+require_once "./models/anime/anime.class.php";
 
 class AnimeManager extends Model{
     private $listeAnime;
